@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Anderson</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navStyle.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="introStyle.css">
 </head>
 
 <body>
+    <!-- NAVIGATION BAR -->
+
     <nav id="desktop-nav">
-        <div class="logo"><img src="assets/logo.png" alt="Emblem"> Jacob Anderson</div>
+        <div class="logo"><a href = "/"><img src="assets/logo.png" alt="Emblem"> Jacob Anderson</a></div>
         <div>
             <ul class="nav-links">
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#experience">Experience</a></li>
-                <li><a href = "#contact">Contact</a></li>
+                <li><a href = "/">About</a></li>
+                <li><a href = "/">Experience</a></li>
+                <li><a href = "/">Contact</a></li>
             </ul>
         </div>
     </nav>
     <nav id="mobile-nav">
-        <div class="logo"><img src="assets/logo.png" alt="Emblem"> Jacob Anderson</div>
+        <div class="logo"><a href = "/"><img src="assets/logo.png" alt="Emblem"> Jacob Anderson</a></div>
         <div class="nav-menu">
           <div class="menu-icon" onclick="toggleMenu()">
             <span></span>
@@ -28,12 +31,27 @@
             <span></span>
           </div>
           <div class="menu-links">
-            <li><a href="/about" onclick="toggleMenu()">About</a></li>
-            <li><a href="/experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="/contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="/" onclick="toggleMenu()">About</a></li>
+            <li><a href="/" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="/" onclick="toggleMenu()">Contact</a></li>
           </div>
         </div>
       </nav>
+
+    <!-- END NAVIGATION BAR -->
+    
+    <!-- INTRO PAGE -->
+    <nav id="intro">
+      <div class="introPara">
+        Hello, my <br>
+        name is <span><br>
+        <b>Jacob <br>
+        Anderson</b></span> <span2> <br>
+        Coder / Game Developer</span2>
+      </div>
+    </nav>
+    <!-- END INTRO PAGE -->
+
     <script src="script.js"></script>
 </body>
 

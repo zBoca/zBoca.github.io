@@ -9,6 +9,7 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
+    background-color: rgb(216, 209, 255);
 }
 
 html {
@@ -20,7 +21,7 @@ p {
 }
 
 .logo {
-    transform: translate(0px, -4px);
+    transform: translate(0px, -5px);
 }
 
 .logo img {
@@ -41,13 +42,16 @@ nav, .nav-links {
 }
 
 #desktop-nav {
+    position:fixed;
+    top:0;
+    width: 100%;
     background-color: darkslategrey;
 }
 
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 8vh;
+    height: 60px;
 }
 
 .nav-links {
@@ -57,7 +61,7 @@ nav {
 }
 
 .nav-links li {
-    color: white;
+    color:rgb(216, 209, 255)
 }
 
 .nav-links li:hover {
@@ -65,24 +69,29 @@ nav {
 }
 
 a {
-    color: white;
+    color: rgb(216, 209, 255);
     text-decoration: none;
     text-decoration-color: gray;
 }
 
 a:hover {
-    color: gray;
+    color: rgb(216, 209, 255);
     text-decoration: underline;
     text-underline-offset: .5rem;
 }
 
 .logo {
     font-size : 2rem;
-    color: white;
+    color: rgb(216, 209, 255);
 }
 
 .logo:hover{
     cursor: default;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(216, 209, 255);
 }
 
 /* Mobile Nav */
@@ -90,6 +99,9 @@ a:hover {
 #mobile-nav{
     display: none;
     background-color: darkslategrey;
+    position:fixed;
+    top:0;
+    width: 100%;
 }
 
 .nav-menu {
@@ -109,7 +121,7 @@ a:hover {
 .menu-icon span {
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: rgb(216, 209, 255);
     transition: all 0.3 ease-in-out;
 }
 
@@ -121,7 +133,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0%;
-    background-color: rgb(27, 46, 46);
+    background-color: rgb(64, 107, 107);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -133,14 +145,14 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: white;
+    color: rgb(216, 209, 255);
     text-decoration: none;
     text-decoration-color: gray;
     transition: all 0.3 ease-in-out;
 }
 
 .menu-links a:hover {
-    color: gray;
+    color:honeydew;
     text-decoration: underline;
     text-underline-offset: .5rem;
 }
@@ -150,8 +162,8 @@ a:hover {
 }
 
 .menu-links.open {
-    border-radius: 10px;
-    transform: translate(6px, 4px);
+    border-radius: 0px 0px 10px 10px;
+    transform: translate(6px, 18px);
     max-height: 300px;
 }
 
@@ -159,6 +171,10 @@ a:hover {
     width: 100%;
     height: 1px;
     color: black;
+}
+
+.menu-icon:hover span {
+    color: gray;
 }
 
 .menu-icon.open span:first-child {

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Ubuntu&display=swap');
+
+#intro {
+    margin-left: 5%;
+    margin-bottom: 15%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+
+    font-family: "Ubuntu", sans-serif;
+    color: darkslategray;
+
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.introPara {
+    translate: 0px -10%;
+    font-size: 90px;
+}
+
+.introPara span {
+    color:chocolate;
+}
+
+.introPara span2 {
+    font-size: 30px;
+}
