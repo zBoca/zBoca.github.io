@@ -32,13 +32,6 @@
     font-size: 4vmin;
 }
 
-body {
-    background-image: url('assets/bg.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 @keyframes loadAnimation{
     0% {
         translate: -1000px 0px;
