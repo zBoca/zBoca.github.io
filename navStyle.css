@@ -21,7 +21,7 @@ p {
 }
 
 .logo {
-    transform: translate(0px, -5px);
+    transform: translate(7px, -5px);
 }
 
 .logo img {
@@ -49,16 +49,22 @@ nav, .nav-links {
 }
 
 nav {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
 }
 
 .nav-links {
+    transform: translate(-7px, 0px);
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+
+    animation: loadRightAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
 
 .nav-links li {
     color:rgb(216, 209, 255)
@@ -83,6 +89,19 @@ a:hover {
 .logo {
     font-size : 2rem;
     color: rgb(216, 209, 255);
+    
+    animation: loadAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadAnimation{
+    0% {
+        translate: -1000px 0px;
+    }
+    100% {
+        translate: 0px 0px;
+    }
 }
 
 .logo:hover{
@@ -105,6 +124,7 @@ a:hover {
 }
 
 .nav-menu {
+    transform: translate(-7px, 0px);
     position: relative;
     display: inline-block;
 }
@@ -116,6 +136,19 @@ a:hover {
     height: 24px;
     width: 30px;
     cursor: pointer; 
+
+    animation: loadRightAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadRightAnimation{
+    0% {
+        translate: 1000px 0px;
+    }
+    100% {
+        translate: 0px 0px;
+    }
 }
 
 .menu-icon span {
@@ -138,6 +171,10 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+
+    animation: loadRightAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .menu-links a {
@@ -179,16 +216,30 @@ a:hover {
 
 .menu-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
+    transition: all .5s;
 }
 
 .menu-icon.open span:nth-child(2) {
     opacity: 0;
+    transition: all .5s;
 }
 
 .menu-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
+    transition: all .5s;
 }
 
 .menu-icon span:first-child{
     transform: none;
+    transition: all .5s;
+}
+
+.menu-icon span:nth-child(2) {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.menu-icon span:last-child {
+    transform: none;
+    transition: all .5s;
 }

@@ -2,7 +2,6 @@
 
 #intro {
     margin-left: 5%;
-    margin-bottom: 15%;
     display: flex;
     position: absolute;
     top: 50%;
@@ -18,7 +17,11 @@
 
 .introPara {
     translate: 0px -10%;
-    font-size: 90px;
+    font-size: 12vmin;
+
+    animation: loadAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .introPara span {
@@ -26,5 +29,21 @@
 }
 
 .introPara span2 {
-    font-size: 30px;
+    font-size: 4vmin;
+}
+
+body {
+    background-image: url('assets/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@keyframes loadAnimation{
+    0% {
+        translate: -1000px 0px;
+    }
+    100% {
+        translate: 0px 0px;
+    }
 }
