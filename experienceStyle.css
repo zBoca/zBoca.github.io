@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Ubuntu&display=swap');
+
+#experience {
+    margin-top: 80px;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    font-family: "Ubuntu", sans-serif;
+    color: darkslategray;
+
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+}
+
+.header {
+    color: chocolate;
+    font-size: 8vmin;
+}
+
+.blurb {
+    color: darkslategray;
+    font-size: 3vmin;
+}
+
+
+.toc {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.toc li, .toc ul, .toc ul li {
+    list-style: outside none none !important;
+}
+
+
+.tocAndEducation {
+    display: flex;
+    margin: 3%;
+}
+.tocHold {
+    flex: 1;
+    vertical-align: middle;
+}
+.education {
+    flex:
+    vertical-align: middle;
+}
