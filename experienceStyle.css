@@ -11,8 +11,8 @@
     font-family: "Ubuntu", sans-serif;
     color: darkslategray;
 
-    justify-content: flex-start;
     scroll-behavior: smooth;
+    justify-content: space-between;
 }
 
 .header {
@@ -27,8 +27,9 @@
 
 
 .toc {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid #aaa;
+    justify-content: left;
+    background: rgb(216, 209, 255) none repeat scroll 0 0;
+    border: 1px solid darkslategray;
     display: table;
     font-size: 95%;
     margin-bottom: 1em;
@@ -51,10 +52,17 @@
     margin: 3%;
 }
 .tocHold {
-    flex: 1;
     vertical-align: middle;
 }
 .education {
-    flex:
     vertical-align: middle;
+}
+
+.tocList li a {
+    color: darkslategray;
+}
+
+.spacer {
+    flex: 1;
+    width: auto;
 }
