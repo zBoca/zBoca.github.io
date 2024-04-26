@@ -28,13 +28,12 @@
 
 .toc {
     justify-content: left;
-    background: rgb(216, 209, 255) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.137) none repeat scroll 0 0;
     border: 1px solid darkslategray;
     display: table;
-    font-size: 95%;
     margin-bottom: 1em;
     padding: 20px;
-    width: auto;
+    font-size: 2vmin;
 }
 
 .title {
@@ -48,21 +47,26 @@
 
 
 .tocAndEducation {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     margin: 3%;
 }
 .tocHold {
+    width: 25%;
     vertical-align: middle;
 }
-.education {
-    vertical-align: middle;
-}
-
 .tocList li a {
+    text-underline-offset: 3px;
     color: darkslategray;
 }
 
-.spacer {
-    flex: 1;
-    width: auto;
+
+.education {
+    vertical-align: middle;
+    justify-content: left;
+}
+.education h2 {
+    color:chocolate;
+    font-size: 4vmin;
 }
