@@ -1,0 +1,125 @@
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* LOGO */
+.logo {
+    font-size: 2.5rem;
+}
+.logo img {
+    translate: 0px 7px;
+    height: 3rem;
+}
+.logo:hover {
+    cursor: default
+}
+
+/**/
+nav {
+    display: flex;
+    background-color: #8686868f;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.navLinks {
+    display: flex;
+}
+
+/* Desktop Nav */
+.navLinks {
+    gap: 2rem;
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+a {
+    color: #D8D1FF;
+    text-decoration: none;
+    text-decoration-color: #AD9EFF;
+}
+
+a:hover {
+    color: #AD9EFF;
+    text-decoration: underline;
+    text-underline-offset: .3rem;
+}
+
+/* Mobile Menu Nav */
+#mobileNav {
+    display: none;
+}
+
+.mobileMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.mobileIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.mobileIcon span {
+    width: 100%;
+    height: 2px;
+    background-color: #D8D1FF;
+    transition: all 0.3 ease-in-out;
+}
+
+.mobileLinks {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: #ad9eff46;
+    border-radius: 20px;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.mobileLinks a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    color: #D8D1FF;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.mobileLinks li {
+    list-style: none;
+}
+.mobileLinks.open{
+    max-height: 300px;
+}
+.mobileLinks a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger Icon */
+.mobileIcon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.mobileIcon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobileIcon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.mobileIcon span:first-child {
+    transform: none;
+}
+.mobileIcon span:first-child {
+    opacity: 1;
+}
+.mobileIcon span:first-child {
+    transform: none;
+}

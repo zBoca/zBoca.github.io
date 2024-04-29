@@ -1,7 +1,7 @@
-function toggleMenu() 
-{
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".menu-icon");
+function toggleMenu() {
+    const menu = document.querySelector(".mobileLinks")
+    const icon = document.querySelector(".mobileIcon")
+
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }

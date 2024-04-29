@@ -3,57 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Anderson - Home</title>
-    <link rel="stylesheet" href="navStyle.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="introStyle.css">
+    <title>Jacob Anderson - Portfolio</title>
+    <link rel="stylesheet" href="generalStyleSheet.css">
+    <link rel="stylesheet" href="navStyleSheet.css">
+    <link rel="stylesheet" href="sectionsStyleSheet.css">
+    <link rel="stylesheet" href="mediaQueries.css">
 </head>
 
 <body>
-    <!-- NAVIGATION BAR -->
+    <nav id="desktopNav">
+        <div class="logo"><img src="assets/logo.png" alt="JDA Logo"> Jacob Anderson</div>
 
-    <nav id="desktop-nav">
-        <div class="logo"><a href = "/"><img src="assets/logo.png" alt="Emblem"> Jacob Anderson</a></div>
         <div>
-            <ul class="nav-links">
-                <li><a href = "/about.html">About</a></li>
-                <li><a href = "/experience.html">Experience & Projects</a></li>
-                <li><a href = "/contact.html">Contact</a></li>
+            <ul class="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <nav id="mobile-nav">
-        <div class="logo"><a href = "/"><img src="assets/logo.png" alt="Emblem"> Jacob Anderson</a></div>
-        <div class="nav-menu">
-          <div class="menu-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="/about.html" onclick="toggleMenu()">About</a></li>
-            <li><a href="/experience.html" onclick="toggleMenu()">Experience & Projects</a></li>
-            <li><a href="/contact.html" onclick="toggleMenu()">Contact</a></li>
-          </div>
-        </div>
-      </nav>
 
-    <!-- END NAVIGATION BAR -->
-    
-    <!-- INTRO PAGE -->
-    <nav id="intro">
-      <div class="introPara" onload="document.body.style">
-        Hello, my 
-        <br>name is <span>
-        <br><b>Jacob 
-        <br>Anderson</b></span> <span2> 
-        <br>Coder / Game Developer</span2>
-        <br><span2>This website is currently still in development...</span2>
-      </div>
+    <nav id="mobileNav">
+        <div class="logo"><img src="assets/logo.png"> Jacob Anderson</div>
+
+        <div class="mobileMenu">
+            <div class="mobileIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobileLinks">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
     </nav>
-    <!-- END INTRO PAGE -->
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profilePic.png" alt="Jacob Anderson Picture">
+        </div>
+
+        <div class="section__text"> 
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jacob Anderson</h1>
+            <p class="section__text__p2">Game Dev / Comp Sci</p>
+            
+            <div class="button-container">
+                <button class="button color2" 
+                 onclick="window.open('./assets/resume')"> Download Resume
+                </button>
+    
+                <button class="button color1"
+                 onclick="location.href='./#contact'"> Contact Me
+                </button>
+            </div>
+    
+            <div id="socials-container">
+                <img 
+                    src="assets/linkedin.png"  
+                    alt="My LinkedIn profile"
+                    class="icon" 
+                    onclick="location.href='https://linkedin.com/'">
+                <img 
+                    src="assets/github.png" 
+                    alt="My Github profile"
+                    class="icon" 
+                    onclick="location.href='https://github.com/zBoca'">
+            </div>
+        </div>
+
+        
+
+    </section>
 
     <script src="script.js"></script>
 </body>
-
 </html>
