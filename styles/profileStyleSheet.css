@@ -15,7 +15,9 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 83vh;
+    padding-bottom: 0;
+    margin-bottom: 0%;
 }
 
 .section__pic-container{
