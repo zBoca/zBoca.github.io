@@ -11,8 +11,9 @@ a, .btn {
     translate: 0px 7px;
     height: 3rem;
 }
-.logo:hover {
+.logo a:hover {
     text-decoration: none;
+    color: #D8D1FF;
 }
 
 /**/
