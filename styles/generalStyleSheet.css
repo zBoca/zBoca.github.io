@@ -8,7 +8,10 @@
 body {
     font-family: "Oswald", sans-serif;
     color: #D8D1FF;
-    background-color: #868686;
+    background-image: url('/assets/bg.svg');
+    background-repeat: repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
 }
 
 html {

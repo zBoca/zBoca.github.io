@@ -24,7 +24,7 @@ section {
     width: 400px;
     margin: auto 0px;
 }
-.section__pic-container img {
+.profile-pic {
     border-radius: 50%;
 }
 
@@ -63,3 +63,32 @@ section {
     height: 2rem;
 }
 
+/* BUTTONS */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button {
+    font-weight: 7300;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.button-color1, .button-color2 {
+    border: none;
+    background: #D8D1FF;
+    color: black;
+}
+.button-color1:hover, .button-color2:hover {
+    background: #AD9EFF;
+    cursor: pointer;
+    color: white
+}
+.button-container {
+    gap: 1rem;
+}

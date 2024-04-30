@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Anderson - Portfolio</title>
-    <link rel="stylesheet" href="generalStyleSheet.css" /> 
-    <link rel="stylesheet" href="navStyleSheet.css" />
-    <link rel="stylesheet" href="sectionsStyleSheet.css" />
-    <link rel="stylesheet" href="mediaqueries.css" type="text/css">
+    <link rel="stylesheet" href="styles/generalStyleSheet.css" /> 
+    <link rel="stylesheet" href="styles/navStyleSheet.css" />
+    <link rel="stylesheet" href="styles/profileStyleSheet.css" />
+    <link rel="stylesheet" href="styles/aboutStyleSheet.css" />
+    <link rel="stylesheet" href="styles/projectsStyleSheet.css" />
+    <link rel="stylesheet" href="styles/contactStyleSheet.css" />
+    <link rel="stylesheet" href="styles/mediaqueries.css" type="text/css">
 </head>
 
 <body>
@@ -17,14 +20,14 @@
         <div>
             <ul class="navLinks">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <nav id="mobileNav">
-        <div class="logo"><img src="assets/logo.png"> Jacob Anderson</div>
+        <div class="logo"><img src="assets/logo.png" alt="JDA Logo"> Jacob Anderson</div>
 
         <div class="mobileMenu">
             <div class="mobileIcon" onclick="toggleMenu()">
@@ -34,7 +37,7 @@
             </div>
             <div class="mobileLinks">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -42,7 +45,7 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img src="assets/profilePic.png" alt="Jacob Anderson Picture">
+            <img src="assets/profilePic.png" alt="Jacob Anderson Picture" class="profile-pic">
         </div>
 
         <div class="section__text"> 
@@ -51,11 +54,11 @@
             <p class="section__text__p2">Game Dev / Comp Sci</p>
 
             <div class="button-container">
-                <button class="button color2" 
+                <button class="button button-color2" 
                  onclick="window.open('./assets/resume')"> Download Resume
                 </button>
     
-                <button class="button color1"
+                <button class="button button-color1"
                  onclick="location.href='./#contact'"> Contact Me
                 </button>
             </div>
@@ -65,7 +68,7 @@
                     src="assets/linkedin.png"  
                     alt="My LinkedIn profile"
                     class="icon" 
-                    onclick="location.href='https://linkedin.com/'">
+                    onclick="location.href='https://www.linkedin.com/in/jacob-anderson-834886306/'">
                 <img 
                     src="assets/github.png" 
                     alt="My Github profile"
@@ -77,6 +80,86 @@
         
 
     </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="assets/profilePic.png"
+                alt="Profile picture"
+                class="about-pic"
+                >
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                        src="assets/experience.png"
+                        alt="Experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>Lorem Ipsum <br>Dolor</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="assets/education.png"
+                        alt="Education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Lorem Ipsum <br>Dolor</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Mollitia eligendi dolorem magnam quaerat excepturi ab eius 
+                       iste voluptatibus, asperiores accusamus quod quos porro libero 
+                       maiores cupiditate labore esse architecto rem, assumenda hic 
+                       distinctio minima eos voluptates cum? Quod blanditiis 
+                       perferendis non vero natus quibusdam laboriosam inventore porro 
+                       fugit. Itaque, quasi?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUT PROJECTS HERE -->
+
+    <section id="contact">
+        <p class="section__text__p1"> Get in touch!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png"
+                     alt="Email icon"
+                     class="icon contact-icon email-icon">
+                <p><a href="mailto:jacob99709@gmail.com">
+                    jacob99709@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png"
+                     alt="LinkedIn icon"
+                     class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/jacob-anderson-834886306/">
+                    LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Jacob Anderson. All Right Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
