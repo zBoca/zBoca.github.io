@@ -8,25 +8,37 @@
     vertical-align: middle;
 }
 
+#LostSignal p a {
+    color: #AD9EFF;
+}
+
 #media {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border: #AD9EFF 0.2rem solid;
+    border: #AD9EFF 0.5rem solid;
     border-radius: 0.4rem;
     background-color: #AD9EFF;
-    gap: 0.2rem;
+    gap: 0.5rem;
     justify-content: space-between;
     height: 20rem;
 }
 
-.left2 {
+.lefttwo {
     flex-direction: column;
-    gap: 0.2rem;
-    width: 250px;
-    justify-content: space-between;
+    height: 100%;
+    width: min-content;
 }
-.left2 .img {
+.lefttop, .leftbot {
     border-radius: 0.4rem;
+}
+.lefttop {
+    height: 46.8013%;
+}
+.leftbot {
+    height: 50.5758;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .mid, .top {
     border-radius: 0.4rem;
