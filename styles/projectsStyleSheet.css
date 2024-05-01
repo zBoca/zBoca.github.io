@@ -1,0 +1,35 @@
+#LostSignal {
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+#LostSignal {
+    display: flex;
+    vertical-align: middle;
+}
+
+#media {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: #AD9EFF 0.2rem solid;
+    border-radius: 0.4rem;
+    background-color: #AD9EFF;
+    gap: 0.2rem;
+    justify-content: space-between;
+    height: 20rem;
+}
+
+.left2 {
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 250px;
+    justify-content: space-between;
+}
+.left2 .img {
+    border-radius: 0.4rem;
+}
+.mid, .top {
+    border-radius: 0.4rem;
+    height: 100%;
+    width: auto;
+}
