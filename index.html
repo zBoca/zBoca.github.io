@@ -3,84 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Anderson - Portfolio</title>
-    <link rel="stylesheet" href="styles/generalStyleSheet.css" /> 
-    <link rel="stylesheet" href="styles/navStyleSheet.css" />
-    <link rel="stylesheet" href="styles/profileStyleSheet.css" />
-    <link rel="stylesheet" href="styles/aboutStyleSheet.css" />
-    <link rel="stylesheet" href="styles/projectsStyleSheet.css" />
-    <link rel="stylesheet" href="styles/contactStyleSheet.css" />
-    <link rel="stylesheet" href="styles/mediaqueries.css" type="text/css">
+    <title>Jacob Anderson Portfolio Site | Game Dev</title>
+    <meta name="description" content="Jacob Anderson is a game developer/programmer.">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav id="desktopNav">
-        <div class="logo"><a href="/"><img src="assets/logo.png" alt="JDA Logo"> Jacob Anderson</a></div>
-
-        <div>
-            <ul class="navLinks">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <nav>
+        <div class="name">
+            <a><img src="assets/logo.png" alt="JDA logo"> Jacob Anderson</a>
         </div>
+        <ul class="navButtons">
+            <li><a>Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <nav id="mobileNav">
-        <div class="logo"><a href="/"><img src="assets/logo.png" alt="JDA Logo"> Jacob Anderson</a></div>
-
-        <div class="mobileMenu">
-            <div class="mobileIcon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="mobileLinks">
-                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
-                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
-            </div>
+    <div class="introBlerb">
+        <div class="portrait" alt="Jacob Anderson portrait"><img src="assets/portrait.png" alt="Portrait"></div>
+        <div class="introText">
+            <p1>Hi, I'm</p1> <br>
+            <p2>Jacob Anderson</p2> <br>
+            <p3>Game Programmer / Indie Developer</p3>
         </div>
-    </nav>
-
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="assets/profilePic.png" alt="Jacob Anderson Picture" class="profile-pic">
-        </div>
-
-        <div class="section__text"> 
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Jacob Anderson</h1>
-            <p class="section__text__p2">Game Dev / Comp Sci</p>
-
-            <div class="button-container">
-                <button class="button button-color2" 
-                 onclick="window.open('./assets/resume')"> Download Resume
-                </button>
-    
-                <button class="button button-color1"
-                 onclick="location.href='contact.html'"> Contact Me
-                </button>
-            </div>
-    
-            <div id="socials-container">
-                <img 
-                    src="assets/linkedin.png"  
-                    alt="My LinkedIn profile"
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/jacob-anderson-834886306/'">
-                <img 
-                    src="assets/github.png" 
-                    alt="My Github profile"
-                    class="icon" 
-                    onclick="location.href='https://github.com/zBoca'">
-            </div>
-        </div>
-
-        
-
-    </section>
-
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>

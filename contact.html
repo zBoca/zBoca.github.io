@@ -3,67 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Anderson - Portfolio</title>
-    <link rel="stylesheet" href="styles/generalStyleSheet.css" /> 
-    <link rel="stylesheet" href="styles/navStyleSheet.css" />
-    <link rel="stylesheet" href="styles/profileStyleSheet.css" />
-    <link rel="stylesheet" href="styles/aboutStyleSheet.css" />
-    <link rel="stylesheet" href="styles/projectsStyleSheet.css" />
-    <link rel="stylesheet" href="styles/contactStyleSheet.css" />
-    <link rel="stylesheet" href="styles/mediaqueries.css" type="text/css">
+    <title>Jacob Anderson Portfolio Site | Game Dev</title>
+    <meta name="description" content="Jacob Anderson is a game developer/programmer.">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav id="desktopNav">
-        <div class="logo"><a href="/"><img src="assets/logo.png" alt="JDA Logo"> Jacob Anderson</a></div>
-
-        <div>
-            <ul class="navLinks">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <nav>
+        <div class="name">
+            <a href="/"><img src="assets/logo.png" alt="JDA logo"> Jacob Anderson</a>
+        </div>
+        <ul class="navButtons">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact">
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contactForm.php">
+            <p1>Contact Me!</p1> <br>
+            <label for="Name" class="fcf-label">Your email</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" placeholder="example@domain.com" required>
+            </div>
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Your message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" placeholder="Your message here" required></textarea>
+                </div>
+            </div>
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+            </div>
+            <ul class="contactButtons">
+                <li><a href="mailto: jacob99709@gmail.com"><img src="assets/email.svg"></a></li>
+                <li><a href="https://www.linkedin.com/in/jacob-anderson-834886306/"><img src="assets/linkedin.svg"></a></li>
+                <li><a href="https://github.com/zBoca"><img src="assets/github.svg"></a></li>
             </ul>
-        </div>
-    </nav>
-
-    <nav id="mobileNav">
-        <div class="logo"><a href="/"><img src="assets/logo.png" alt="JDA Logo"> Jacob Anderson</a></div>
-
-        <div class="mobileMenu">
-            <div class="mobileIcon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="mobileLinks">
-                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
-                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-
-    <section id="contact">
-        <p class="section__text__p1"> Get in touch!</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="assets/email.png"
-                     alt="Email icon"
-                     class="icon contact-icon email-icon">
-                <p><a href="mailto:jacob99709@gmail.com">
-                    jacob99709@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="assets/linkedin.png"
-                     alt="LinkedIn icon"
-                     class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/jacob-anderson-834886306/">
-                    LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+        </form>
+    </div>
 </body>
-</html>
