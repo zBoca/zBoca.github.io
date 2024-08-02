@@ -382,6 +382,10 @@ button[type=submit]:hover {
     animation-name: slideRight;
     animation-duration: 2s;
     background: linear-gradient(to left, #264653 50%, coral 50%)
+}#project3 {
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    background: linear-gradient(to left, #008000 50%, #264653 50%)
 }
 
 .projectHolder .text {
@@ -583,5 +587,80 @@ button[type=submit]:hover {
     width: 50%;
 }
 .shapedByFailure .gameInfo .gameMedia .gap {
+    height: 1vw;
+}
+
+/* Shifting Shadows */
+.shiftingShadows {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5rem;
+    text-align: center;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.shiftingShadows p1 {
+    font-size: 6vmin;
+    color: #F4A261;
+}
+.shiftingShadows .gameInfo {
+    display: flex;
+}
+.shiftingShadows .gameInfo .gameDescription, .shiftingShadows .gameInfo .gameMedia {
+    width: 50%;
+    margin-left: 3vmin;
+    margin-right: 3vmin;
+}
+.shiftingShadows .gameInfo .gameDescription {
+    animation-name: slideRight;
+    animation-duration: 2s;
+    color: #264653;
+    font-size: 2.5vmin;
+    cursor: default;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.shiftingShadows .gameInfo .gameDescription a {
+    text-decoration: none;
+    color: #E9C46A;
+}
+.shiftingShadows .gameInfo .gameDescription a:hover {
+    transition: all 0.2s;
+    color: #F4A261;
+}
+.shiftingShadows .gameInfo .gameMedia {
+    margin-top: auto;
+    margin-bottom: auto;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+.shiftingShadows .gameInfo .gameMedia .pics {
+    background-color: #264653;
+    border-radius: 2%;
+    display: flex;
+    width: fit-content;
+}
+.shiftingShadows .gameInfo .gameMedia img {
+    width: 95%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 4%;
+}
+.shiftingShadows .gameInfo .gameMedia .left2 {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    justify-content: space-between;
+    width: 50%;
+    height: fit-content;
+}
+.shiftingShadows .gameInfo .gameMedia .right2 {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-around;
+    width: 50%;
+}
+.shiftingShadows .gameInfo .gameMedia .gap {
     height: 1vw;
 }
