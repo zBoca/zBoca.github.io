@@ -242,105 +242,41 @@ nav .navButtons li a:hover {
 
 /* CONTACT */
 .contact {
-    display: flex;
+    display: inline-block;
     overflow-y: hidden;
     margin-left: 5rem;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
     text-align: center;
     align-items: center;
 }
 .contact p1 {
+    width: fit-content;
+    margin-right: auto;
     font-size: 10vmin;
     color: #264653;
-}
-.contact .fcf-form-class {
-    animation-name: slideDown;
+    margin-bottom: 5vmin;
+    animation-name: slideRightQuick;
     animation-duration: 2s;
-    vertical-align: middle;
-    height: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 100%;
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-}
-.contact .fcf-label {
-    text-align: left;
-    font-size: 3vmin;
-    color: #264653;
 }
 
 .contact .contactButtons {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 100%;
     padding-left: 0;
-    animation-name: slideUpQuick;
+    animation-name: slideRightQuick;
     animation-duration: 2s;
 }
 .contact .contactButtons img {
     width: 5vmax;
 }
 
-input[type=text]{
-    width: 100%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 3px solid #264653;
-    border-radius: 5px;
-    font-family: "Roboto Slab", serif;
-    background-color: #2A9D8F;
-    color: #264653;
-}
-input::-webkit-input-placeholder{
-    color:#264653;
-}
-input:-moz-placeholder {
-    color:#264653;
-}
-textarea::-webkit-input-placeholder{
-    color:#264653;
-}
-textarea:-moz-placeholder {
-    color:#264653;
-}
-input[type=text]:focus {
-    border: 3px solid black;
-}
-textarea {
-    width: 100%;
-    height: 40vmin;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 3px solid #264653;
-    border-radius: 5px;
-    resize: none;
-    font-family: "Roboto Slab", serif;
-    background-color: #2A9D8F;
-    margin-bottom:2vmin;
-    color: #264653;
-}
-textarea:focus {
-    border: 3px solid black;
-}
-
-button[type=submit] {
-    transition: all 0.2s;
-    font-size: 2vmin;
-    padding: 2vmin 6vmin;
-    box-sizing: border-box;
-    border: 3px solid #264653;
-    border-radius: 50vmin;
-    background-color: #2A9D8F;
-    color: #264653;
-}
-button[type=submit]:hover {
-    transition: all 0.2s;
-    border: 3px solid #14252c;
-    background-color: #21746a;
+.contact .spacer {
+    height: 5vmax;
 }
 
 /* PROJECTS */
