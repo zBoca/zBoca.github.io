@@ -1,33 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Anderson | Portfolio</title>
-    <meta name="description" content="Jacob Anderson is a game developer/programmer.">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jacob Anderson | Portfolio</title>
+        <meta name="description" content="Jacob Anderson is a game developer/programmer.">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaQueries.css">
+    </head>
 
-<body>
-    <nav>
-        <div class="name">
-            <a><img src="assets/logo.png" alt="JDA logo"> Jacob Anderson</a>
+    <body>
+        <nav>
+            <a href="#home"><img src="assets/logo.png" class="logo"></a> <a href="#home"> Jacob Anderson</a>
+            <ul class = "buttons">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </nav>
+        <div id="home"></div>
+        <div id="intro">
+            <div class="portrait">
+                <img src="assets/portrait.png">
+            </div>
+            <div class="text"> <h1>Hi, I'm&nbsp;</h1><h2>Jacob Anderson</h2> </div>
         </div>
-        <ul class="navButtons">
-            <li><a>Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <div class="introBlerb">
-        <div class="portrait" alt="Jacob Anderson portrait"><img src="assets/portrait.png" alt="Portrait"></div>
-        <div class="introText">
-            <p1>Hi, I'm</p1> <br>
-            <p2>Jacob Anderson</p2> <br>
-            <p3>Game Programmer / Indie Developer</p3>
+        <div id="about">
+            <div class="about">
+                <div class="aboutMeBlerb">
+                    <h1>About Me</h1> <br> <br>
+                    <p1>I am a college student learning computer science and enjoy spending my free time coding and game developing.</p1><br> <br> <br>
+                </div>
+                <div class="tools">
+                    <img src="assets/c++.svg">
+                    <img src="assets/github.svg">
+                    <img src="assets/godot.svg">
+                    <img src="assets/unity.svg">
+                </div>
+            </div>
+            <div class="contacts">
+                <a href="mailto: jacob99709@gmail.com"><img src="assets/email.svg"></a>
+                <a href="https://github.com/zBoca"><img src="assets/github.svg"></a>
+                <a href="tel:+17143195897"><img src="assets/phone.png"></a>
+            </div>
         </div>
-    </div>
-</body>
+
+        <div id="projects">
+            <div class="header">My Projects</div>
+            <div class="list">
+                <a href="lostsignal">
+                <div class="project">
+                    <img src="assets/LostSignalPics/LostSignalSS1.png">
+                    <h1>Lost Signal</h1>
+                    <p1> 2D Puzzle Platformer / Game Jam Submission</p1>
+                </div>
+                </a>
+                <a href="shapedbyfailure">
+                <div class="project">
+                    <img src="assets/ShapedByFailurePics/ShapedByFailureSS1.png">
+                    <h1>Shaped By Failure</h1>
+                    <p1> Top down reversed rogue-like / Game Jam Submission</p1>
+                </div>
+                </a>
+            </div>
+            <div class="list">
+                <a href="shiftingshadows">
+                <div class="project">
+                    <img src="assets/ShiftingShadowsPics/ShiftingShadowsSS1.png">
+                    <h1>Shifting Shadows</h1>
+                    <p1> Alchemic Puzzle Game / Game Jam Submission</p1>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <ul>
+                <li><a href="mailto: jacob99709@gmail.com"><img src="assets/email.svg"></a><a href="mailto: jacob99709@gmail.com">&nbsp&nbsp&nbsp&nbsp jacob99709@gmail.com</a></li> 
+                <li><a href="https://github.com/zBoca"><img src="assets/github.svg"></a><a href="https://github.com/zBoca">&nbsp&nbsp&nbsp&nbsp https://github.com/zBoca</a></li>
+                <li><a href="tel:7143195897"><img src="assets/phone.png"></a><a href="tel:7143195897">&nbsp&nbsp&nbsp&nbsp +1 (714) 319-5897</a></li>
+            </ul>
+        </div>
+    </body>
 </html>

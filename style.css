@@ -1,602 +1,253 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-/* Color palette: https://coolors.co/palette/264653-2a9d8f-e9c46a-f4a261-e76f51 
-    #264653
-    #2a9d8f
-    #e9c46a
-    #f4a261
-    #e76f51
+/*
+    Color Palette:
+    Background = #eff0f3
+    Header = #000000
+    Text = #2a2a2a
+    Light Text = #808080
+    Highlight = #ff8e3c
 */
 
-/* GENERAL */
-html, body {
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+html {
+    scroll-behavior: smooth;
 }
-
 body {
     font-family: "Roboto Slab", serif;
-    background-color: #2a9d8f;
+    background-color: #eff0f3;
     margin: 0 0 0 0;
-    display: flex;
+    display: block;
 }
 
-/* SIDEBAR */
 nav {
-    z-index: 10;
-    position: fixed;
-    background-color: #264653;
-    display: grid;
-    height: 100%;
-    width: 5rem;
-    text-align: center;
-    color: #8ecae6;
-    justify-content: space-between;
-}
-
-nav .name img {
-    height: 3rem;
-    margin: 1rem 1rem .5rem 1rem;
-}
-
-nav .name a{
-    color: #E9C46A;
-    text-decoration: none;
-    cursor:pointer;
-}
-
-nav .navButtons {
-    align-self: flex-end;
-    padding-left: 0;
-    margin-bottom: 5rem;
-}
-
-nav .navButtons li {
-    display: inline-block;
-    padding-top: 2rem;
-}
-
-nav .navButtons li a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #E9C46A;
-}
-nav .navButtons li a:hover {
-    transition: all 0.2s;
-    color: #F4A261;
-}
-
-/* ANIMS */
-@keyframes slideDown{
-    from {
-        transform: translateY(-100vh);
-    }
-    to {
-        transform: translateY(0%);
-    }
-}
-@keyframes slideUp{
-    from{
-        transform: translateY(100vh);
-    }
-    to {
-        transform: translateY(0%);
-    }
-}
-@keyframes slideUpQuick{
-    from{
-        transform: translateY(200vh);
-    }
-    to {
-        transform: translateY(0%);
-    }
-}
-@keyframes slideLeft{
-    from{
-        transform: translateX(100vw);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-@keyframes slideRight{
-    from{
-        transform: translateX(-100vw);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-@keyframes slideRightQuick{
-    from{
-        transform: translateX(-200vw);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-
-
-/* INTRO */
-.introBlerb {
-    margin: auto;
-    margin-left: 5rem;
-    width: 100%;
-}
-
-.introBlerb .portrait {
-    text-align: center;
-    align-self: center;
-    justify-content: space-around;
-    margin:auto;
-    width: fit-content;
-    margin: auto;
-    animation-name: slideDown;
-    animation-duration: 2s;
-}
-.introBlerb img {
-    width: 50vmin;
-    border-radius: 18rem;
-}
-
-.introText {
-    background-color: #264653;
-    text-align: center;
-    align-self: center;
-    justify-content: space-around;
-    margin: auto;
-    width: fit-content;
-    border-radius: 7rem;
-    padding-bottom: 3vmin;
-    padding-top: 3vmin;
-    animation-name: slideUp;
-    animation-duration: 2s;
-}
-.introText p1 {
-    color: #E9C46A;
-    font-size: 3vmin;
-}
-.introText p2 {
-    font-size: 9vmin;
-    color: #E76F51;
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-}
-.introText p3 {
-    color: #E9C46A;
-    font-size: 2.5vmin;
-}
-
-/* ABOUT ME */
-.aboutMeBlerb {
-    margin-left: 5rem;
-    margin-right: 1rem;
-    height: fit-content;
-    text-align: center;
-    align-self: center;
-    animation-name: slideLeft;
-    animation-duration: 2s;
-}
-.aboutMeBlerb p1 {
-    font-size: 6vmin;
-    color: #F4A261;
-}
-.aboutMeBlerb p2 {
-    font-size: 1.5vmin;
-    color: #264653;
-}
-.aboutMeBlerb p3 {
-    font-size: 2vmin;
-    width: 100%;
-    color: #264653;
-}
-
-.seperator {
-    background-color: #264653;
-    width: 20vmin;
-    height: 3px;
-    margin: auto;
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
-}
-
-.aboutMeBlerb .gap {
-    height: 2rem;
-}
-
-.aboutMeBlerb .techHolder {
-    animation-name: slideRightQuick;
-    animation-duration: 2s;
-}
-.aboutMeBlerb .techStack {
-    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    height: 10vmin;
+    width: auto;
     display: flex;
-    font-size: 2.5vmin;
-}
-
-.aboutMeBlerb .techStack .techList {
-    display: grid;
-    width: 20%;
-    background-color: #264653;
-    padding: 1vmin;
-    margin-bottom: 1rem;
-    border-radius: 2vmin;
-    color: #F4A261;
-}
-
-.aboutMeBlerb .techStack .techList img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 15vmin;
-}
-
-.aboutMeBlerb .techStack .techList .pics img {
-    width: 5vmin;
-}
-
-.aboutMeBlerb .techStack .techList .pics {
-    margin-top: 2vmin;
-    display: flex;
-    justify-content: space-around;
-}
-
-/* CONTACT */
-.contact {
-    display: inline-block;
-    overflow-y: hidden;
-    margin-left: 5rem;
-    width: 100%;
-    height: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 1.5vmin 1.5vmin;
+    background-color: #eff0f3e7;
 }
-.contact p1 {
-    width: fit-content;
-    margin-right: auto;
-    font-size: 10vmin;
-    color: #264653;
-    margin-bottom: 5vmin;
-    animation-name: slideRightQuick;
-    animation-duration: 2s;
-}
-
-.contact .contactButtons {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding-left: 0;
-    animation-name: slideRightQuick;
-    animation-duration: 2s;
-}
-.contact .contactButtons img {
-    width: 5vmax;
-}
-
-.contact .spacer {
-    height: 5vmax;
-}
-
-/* PROJECTS */
-.projectsList {
-    text-align: center;
-    margin-left: 5rem;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-.projectsList .textHolder {
-    animation-name: slideDown;
-    animation-duration: 2s;
-}
-
-.projectsList p1 {
-    font-size: 6vw;
-    color: #F4A261;
-}
-
-.projectHolder {
-    border: 3px solid black;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 7vw;
-    height: fit-content;
-    border-radius: 5vw;
-    display: flex;
-    box-shadow: 0 .5vw rgba(0, 0, 0, 0.5);
-}
-
-#project1 {
-    animation-name: slideLeft;
-    animation-duration: 2s;
-    background: linear-gradient(to left, cornflowerblue 50%, #264653 50%)
-}
-#project2 {
-    animation-name: slideRight;
-    animation-duration: 2s;
-    background: linear-gradient(to left, #264653 50%, coral 50%)
-}#project3 {
-    animation-name: slideLeft;
-    animation-duration: 2s;
-    background: linear-gradient(to left, #008000 50%, #264653 50%)
-}
-
-.projectHolder .text {
-    width: 50%;
-    height: 26vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    height: fit-content
-}
-.projectHolder .text p1 {
-    font-size: 5vw;
-}
-.projectHolder .text p2 {
-    font-size: 2vw;
-    color: gray
-}
-
-.projectHolder .text button a {
+nav a {
+    font-size: 3vmin;
+    color: #000000;
     text-decoration: none;
-    color: #264653;
-    font-size: 3vw;
 }
-.projectHolder .text button {
-    padding: 2vw 2vw;
-    border-radius: 4vw 4vw;
-    border: 2px solid black;
-    margin-top: 5vw;
-    background-color: #F4A261;
+nav a img {
+    margin: 1vmin;
+    height: 8vmin;
+    width: auto;
 }
-.projectHolder .text button:hover {
+nav .logo {
     cursor: pointer;
-    transition: all .2s;
-    background-color: #be7f4c;
 }
-
-.projectsList .footergap {
+nav ul {
+    list-style: none;
     width: 100%;
-    height: 10rem;
+    text-align: right;
+}
+nav ul a {
+    cursor: pointer;
+    padding: 0 2vmin;
+    border-radius: 1.5vmin;
+}
+nav ul a:hover {
+    background-color: #ff8e3c;
+    transition: background-color 0.5s;
 }
 
-.projectHolder .imgHolder {
-    width: 50%;
-    height: fit-content;
-    justify-content: center;
-    align-self: center;
+#home {
+    position: absolute;
+    top: 0;
 }
-.projectHolder .imgHolder img {
-    border-radius: 5vw;
+
+#intro {
+    padding: 10vh 8vmin;
+}
+#intro .text {
+    display: flex;
+    justify-content: center;
+}
+#intro .portrait {
+    width: 100%;
+}
+#intro .portrait img {
+    display: block;
+    margin: auto;
+    width: 70vmin;
+    border-radius: 40%;
+}
+#intro h1 {
+    margin: 0 0 0 0;
+    font-size: 6vw;
+    width: fit-content;
+    color: #2a2a2a;
+}
+#intro h2 {
+    margin: 0 0 0 0;
+    font-size: 6vw;
+    width: fit-content;
+    color: #ff8e3c;
+}
+
+#about {
+    display: block;
+    padding: 10vh 8vmin;
+}
+#about .about {
+    display: flex;
+    width: 100%;
+}
+#about .aboutMeBlerb {
+    width: 50%;
+}
+#about .aboutMeBlerb h1 {
+    margin: 0 0 0 0;
+    font-size: 6vmin;
+    color: #2a2a2a;
+}
+#about .aboutMeBlerb p1 {
+    margin: 0 0 0 0;
+    font-size: 3vmin;
+    color: #808080;
+}
+#about .tools {
+    margin: 10vw 0;
+    width: 49%;
+    height: fit-content;
+}
+#about .tools img {
     width: 20vw;
 }
-
-/* LOST SIGNAL */
-.lostsignal {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 5rem;
-    text-align: center;
+#about .contacts {
+    padding: 2vmin 0;
+    display: flex;
     width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
+    justify-content: space-around;
+    background-color: #808080;
+    border-radius: 2vmin;
 }
-.lostsignal p1 {
-    font-size: 6vmin;
-    color: #F4A261;
+#about .contacts img {
+    height: 7vw;
+    cursor: pointer;
 }
-.lostsignal .gameInfo {
+
+#projects {
+    padding: 10vh 8vmin;
+}
+#projects .header {
+    width: 100%;
+    text-align: center;
+    font-size: 8vmin;
+    color: #000000;
+}
+#projects .list {
     display: flex;
 }
-.lostsignal .gameInfo .gameDescription, .lostsignal .gameInfo .gameMedia {
-    width: 50%;
-    margin-left: 3vmin;
-    margin-right: 3vmin;
+#projects a {
+    width: 45%;
+    margin: 2vmin 2vmin;
+    text-decoration: none;
 }
-.lostsignal .gameInfo .gameDescription {
-    animation-name: slideRight;
-    animation-duration: 2s;
-    color: #264653;
+#projects .project:hover {
+    border-color: #ff8d3c;
+    transition: all 0.2s;
+}
+#projects .project {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-color: #ff8d3c00;
+    border-radius: 3vmin;
+    border-style: solid;
+    background-color: #808080;
+}
+#projects .project img {
+    width: 60vmin;
+}
+#projects h1 {
+    margin: 0 0 0 0;
+    font-size: 5vmin;
+    text-align: center;
+    color: #000000;
+}
+#projects p1 {
+    margin: 2vmin 0;
+    display: flex;
+    width: 100%;
     font-size: 3vmin;
-    cursor: default;
-    text-align: left;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.lostsignal .gameInfo .gameDescription a {
-    text-decoration: none;
-    color: #E9C46A;
-}
-.lostsignal .gameInfo .gameDescription a:hover {
-    transition: all 0.2s;
-    color: #F4A261;
-}
-.lostsignal .gameInfo .gameMedia {
-    margin-top: auto;
-    margin-bottom: auto;
-    animation-name: slideLeft;
-    animation-duration: 2s;
-}
-.lostsignal .gameInfo .gameMedia .pics {
-    background-color: #264653;
-    border-radius: 2%;
-    display: flex;
-    width: fit-content;
-}
-.lostsignal .gameInfo .gameMedia img {
-    width: 95%;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 4%;
-}
-.lostsignal .gameInfo .gameMedia .left2 {
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    justify-content: space-between;
-    width: 52.5%;
-    height: fit-content;
-}
-.lostsignal .gameInfo .gameMedia .right2 {
-    margin-top: auto;
-    margin-bottom: auto;
-    justify-content: space-around;
-    width: 47.5%;
-}
-.lostsignal .gameInfo .gameMedia .gap {
-    height: 1vw;
-}
-.gameDescription .centered {
     text-align: center;
+    color: #2a2a2a;
 }
 
-/* Shaped By Failure */
-.shapedByFailure {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 5rem;
-    text-align: center;
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
+#contact {
+    background-color: #808080;
+    padding: 1vh 5vmin;
+    display: block;
 }
-.shapedByFailure p1 {
-    font-size: 6vmin;
-    color: #F4A261;
+#contact img {
+    height: 7vw;
+    cursor: pointer;
+    margin: 2vmin 0;
 }
-.shapedByFailure .gameInfo {
+#contact ul {
+    padding: 0 0 0 0;
+}
+#contact li {
     display: flex;
+    list-style: none;
+    vertical-align: middle;
 }
-.shapedByFailure .gameInfo .gameDescription, .shapedByFailure .gameInfo .gameMedia {
-    width: 50%;
-    margin-left: 3vmin;
-    margin-right: 3vmin;
-}
-.shapedByFailure .gameInfo .gameDescription {
-    animation-name: slideRight;
-    animation-duration: 2s;
-    color: #264653;
-    font-size: 3vmin;
-    cursor: default;
-    text-align: left;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.shapedByFailure .gameInfo .gameDescription a {
-    text-decoration: none;
-    color: #E9C46A;
-}
-.shapedByFailure .gameInfo .gameDescription a:hover {
-    transition: all 0.2s;
-    color: #F4A261;
-}
-.shapedByFailure .gameInfo .gameMedia {
-    margin-top: auto;
-    margin-bottom: auto;
-    animation-name: slideLeft;
-    animation-duration: 2s;
-}
-.shapedByFailure .gameInfo .gameMedia .pics {
-    background-color: #264653;
-    border-radius: 2%;
-    display: flex;
+#contact a {
+    display: block;
+    height: 100%;
+    margin: auto 0;
     width: fit-content;
-}
-.shapedByFailure .gameInfo .gameMedia img {
-    width: 95%;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 4%;
-}
-.shapedByFailure .gameInfo .gameMedia .left2 {
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    justify-content: space-between;
-    width: 50%;
-    height: fit-content;
-}
-.shapedByFailure .gameInfo .gameMedia .right2 {
-    margin-top: auto;
-    margin-bottom: auto;
-    justify-content: space-around;
-    width: 50%;
-}
-.shapedByFailure .gameInfo .gameMedia .gap {
-    height: 1vw;
+    text-decoration: none;
+    color: #000000;
 }
 
-/* Shifting Shadows */
-.shiftingShadows {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 5rem;
+#gameDescText {
+    margin: 8vmin 8vmin;
+}
+#gameDescText .gameTitle {
+    font-size: 8vmin;
     text-align: center;
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
+    margin: 5vmin 0;
 }
-.shiftingShadows p1 {
-    font-size: 6vmin;
-    color: #F4A261;
+#gameDescText a {
+    color: #ff8e3c;
 }
-.shiftingShadows .gameInfo {
+#gameDescMedia {
+    margin: 8vmin 8vmin;
+    border-radius: 5vmin;
+    background-color: #808080;
+}
+#gameDescMedia .row {
     display: flex;
-}
-.shiftingShadows .gameInfo .gameDescription, .shiftingShadows .gameInfo .gameMedia {
-    width: 50%;
-    margin-left: 3vmin;
-    margin-right: 3vmin;
-}
-.shiftingShadows .gameInfo .gameDescription {
-    animation-name: slideRight;
-    animation-duration: 2s;
-    color: #264653;
-    font-size: 2.5vmin;
-    cursor: default;
-    text-align: left;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.shiftingShadows .gameInfo .gameDescription a {
-    text-decoration: none;
-    color: #E9C46A;
-}
-.shiftingShadows .gameInfo .gameDescription a:hover {
-    transition: all 0.2s;
-    color: #F4A261;
-}
-.shiftingShadows .gameInfo .gameMedia {
-    margin-top: auto;
-    margin-bottom: auto;
-    animation-name: slideLeft;
-    animation-duration: 2s;
-}
-.shiftingShadows .gameInfo .gameMedia .pics {
-    background-color: #264653;
-    border-radius: 2%;
-    display: flex;
-    width: fit-content;
-}
-.shiftingShadows .gameInfo .gameMedia img {
-    width: 95%;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 4%;
-}
-.shiftingShadows .gameInfo .gameMedia .left2 {
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    justify-content: space-between;
-    width: 50%;
-    height: fit-content;
-}
-.shiftingShadows .gameInfo .gameMedia .right2 {
-    margin-top: auto;
-    margin-bottom: auto;
     justify-content: space-around;
-    width: 50%;
+    padding: 2vmin 0 2vmin;
 }
-.shiftingShadows .gameInfo .gameMedia .gap {
-    height: 1vw;
+#gameDescMedia .row img {
+    height: 40vmin;
+    border-radius: 3vmin;
+}
+#gameDescMedia .row2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vmin 0 2vmin;
+}
+#gameDescMedia .row2 img {
+    height: 40vmin;
+    border-radius: 3vmin;
+}
+#gameDescMedia .row3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vmin 0 2vmin;
+}
+#gameDescMedia .row3 img {
+    height: 40vmin;
+    border-radius: 3vmin;
 }
