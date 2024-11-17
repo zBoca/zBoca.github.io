@@ -137,6 +137,9 @@ nav ul a:hover {
 #projects {
     padding: 10vh 8vmin;
 }
+#projects a .project img {
+    width: 100%;
+}
 #projects .header {
     width: 100%;
     text-align: center;
