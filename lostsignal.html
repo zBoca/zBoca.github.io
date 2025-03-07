@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jacob Anderson | Portfolio</title>
-        <meta name="description" content="Jacob Anderson is a game developer/programmer.">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="mediaQueries.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Anderson | Lost Signal</title>
+    <link rel = "stylesheet" href = "style.css" />
+    <link rel = "stylesheet" href = "mediaqueries.css" />
+</head>
 
-    <body>
-        <nav>
-            <a href="/#home"><img src="assets/logo.png" class="logo"></a> <a href="/#home"> Jacob Anderson</a>
-            <ul class = "buttons">
-                <a href="/#about">About</a>
-                <a href="/#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </ul>
-        </nav>
-        <div id="gameDesc">
-            <div id="gameDescText">
-                <div class="gameTitle">
-                    Lost Signal
-                </div>
-                <div class="gameDescription">
-                    Lost Signal is a puzzle platformer in which you play as a little robot on your first day on the job as a satellite repair bot.
-                    Lost Signal was a game jam submission with the theme of "lost signal." I did the programming, art, SFX, and playtesting for the game while a friend of mine did 
-                    the music. Lost Signal can be played as a web export on my itch.io page <a href="https://zboca.itch.io/lostsignal">here</a>.
-                </div>
-            </div>
-            <div id="gameDescMedia">
-                <main class="carousel-container">
-                    <div class="carousel">
-                        <div class="item active">
-                          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3q1fIxLZLwc?si=-2v22ph96-KoHdUb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="item">
-                            <img src="assets/LostSignalPics/LostSignalSS1.png" alt="Image 1" />
-                        </div>
-                        <div class="item">
-                            <img src="assets/LostSignalPics/LostSignalSS2.png" alt="Image 2" />
-                        </div>
-                        <div class="item">
-                            <img src="assets/LostSignalPics/LostSignalSS3.png" alt="Image 3" />
-                        </div>
-                        <div class="item">
-                            <img src="assets/LostSignalPics/LostSignalSS4.png" alt="Image 4" />
-                        </div>
-                    </div>
-                    <button class="btn prev"><</button>
-                    <button class="btn next">></button>
-                    <div class="dots"></div>
-                </main>
-            </div>
-        </div>
-
-        <div id="contact">
-            <ul>
-                <li><a href="mailto: jacob99709@gmail.com"><img src="assets/email.svg"></a><a href="mailto: jacob99709@gmail.com">&nbsp&nbsp&nbsp&nbsp jacob99709@gmail.com</a></li> 
-                <li><a href="https://github.com/zBoca"><img src="assets/github.svg"></a><a href="https://github.com/zBoca">&nbsp&nbsp&nbsp&nbsp https://github.com/zBoca</a></li>
-                <li><a href="tel:7143195897"><img src="assets/phone.png"></a><a href="tel:7143195897">&nbsp&nbsp&nbsp&nbsp +1 (714) 319-5897</a></li>
+<body>
+    <nav id = "desktopNav">
+        <div class = "logo"><a href = "index.html">Jacob Anderson</a></div>
+        <div>
+            <ul class = "navLinks">
+                <li> <a href = "index.html#about">About</a> </li>
+                <li> <a href = "index.html#experience">Experience</a> </li>
+                <li> <a href = "index.html#projects">Projects</a> </li>
+                <li> <a href = "index.html#contact">Contact</a> </li>
             </ul>
         </div>
-    </body>
-</html>
-<script type="text/javascript" src="carousel.js"></script>
+    </nav>
+
+    <nav id="hamburgerNav">
+        <div class = "logo"><a href = "index.html">Jacob Anderson</a></div>
+        <div class = "hamburgerMenu">
+            <div class = "hamburgerIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menuLinks">
+                <li> <a href = "index.html#about" onclick="toggleMenu()">About</a> </li>
+                <li> <a href = "index.html#experience" onclick="toggleMenu()">Experience</a> </li>
+                <li> <a href = "index.html#projects" onclick="toggleMenu()">Projects</a> </li>
+                <li> <a href = "index.html#contact" onclick="toggleMenu()">Contact</a> </li>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="title">Lost Signal</h1>
+    <p class="game-descriptions"><br>Play as a satellite repair robot on your first day on the 
+        job as you try to restore the Lost Signal! <br><br> 
+        
+        Lost Signal is a puzzle platformer I made for a game jam with the theme of "lost signal"</p>
+    
+     <div class="btn-container project-page-buttons">
+        <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/zBoca/Lost-Signal'"
+        >
+            Github
+        </button>
+        <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://zboca.itch.io/lostsignal'"
+        >
+            Try it!
+        </button>
+    </div>
+
+    <iframe src="https://www.youtube.com/embed/3q1fIxLZLwc?si=GK_16FDDwLbiV897" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html> 
