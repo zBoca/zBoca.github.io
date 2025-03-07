@@ -405,6 +405,59 @@ h3 {
     border-color: rgb(150, 150, 140);
 }
 
+.dimension-btns {
+    width: 100%;
+    gap:5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.d-btn {
+    color: rgb(60, 60, 55);
+    font-size: 3vw;
+    border: none;
+    text-decoration: none;
+}
+
+.d-btn.selected {
+    text-decoration: underline;
+    text-decoration-color: rgb(60, 60, 55);
+}
+
+.twod-container {
+    transition: all 1000ms ease-in-out;
+    translate: -250px;
+    opacity: 0;
+}
+
+.twod-container.selected {
+    transition: all 1000ms ease-in-out;
+    translate: 0;
+    opacity: 1;
+}
+
+.threed-container {
+    transition: all 1000ms ease-in-out;
+    translate: 250px;
+    opacity: 0;
+}
+
+.threed-container.selected {
+    transition: all 1000ms ease-in-out;
+    translate: 0;
+    opacity: 1;
+}
+
+.projects-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.twod-container, .threed-container {
+    position: absolute;
+    top: 20vh;
+}
+
 /* #endregion PROJECTS */
 
 /* #region CONTACT */
@@ -459,6 +512,8 @@ footer p {
 
 /* #endregion FOOTER */
 
+/* #region GAMEDESCS */
+
 .game-descriptions {
     text-align: center;
     margin-left: 5vw;
@@ -466,7 +521,7 @@ footer p {
 }
 
 iframe {
-    height: 40vh;
+    height: 40vw;
     width: 70vw;
     margin-top: 2vh;
     margin-left: 15vw;
@@ -476,3 +531,26 @@ iframe {
 .project-page-buttons {
     margin-top: 2vh;
 }
+
+.game-descriptions-images {
+    width: 92vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    align-items: center;
+    justify-content: space-around;
+    border: rgb(80, 80, 75) 0.3rem solid;
+    border-radius: 2rem;
+}
+
+.game-descriptions-images img {
+    width:20vw;
+    height: auto;
+}
+
+/* #endregion GAMEDESCS */
