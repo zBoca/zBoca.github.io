@@ -1,350 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Anderson | Portfolio</title>
-    <link rel = "stylesheet" href = "style.css" />
-    <link rel = "stylesheet" href = "mediaQueries.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Anderson - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+  </head>
 
-<body>
-    <nav id = "desktopNav">
-        <div class = "logo">Jacob Anderson</div>
-        <div>
-            <ul class = "navLinks">
-                <li> <a href = "#about">About</a> </li>
-                <li> <a href = "#experience">Experience</a> </li>
-                <li> <a href = "#projects">Projects</a> </li>
-                <li> <a href = "#contact">Contact</a> </li>
-            </ul>
-        </div>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jacob Anderson</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <nav id="hamburgerNav">
-        <div class = "logo">Jacob Anderson</div>
-        <div class = "hamburgerMenu">
-            <div class = "hamburgerIcon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class = "menuLinks">
-                <li> <a href = "#about" onclick="toggleMenu()">About</a> </li>
-                <li> <a href = "#experience" onclick="toggleMenu()">Experience</a> </li>
-                <li> <a href = "#projects" onclick="toggleMenu()">Projects</a> </li>
-                <li> <a href = "#contact" onclick="toggleMenu()">Contact</a> </li>
-            </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Jacob Anderson</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
 
-    <section id = "profile">
-        <div class = "section__pic-container">
-            <img src="./imgs/portrait.png" alt="Profile Picture">
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./imgs/portrait.png" alt="Jacob Anderson profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jacob Anderson</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class = "section__text">
-            <p class = "section__text__p1"> Hi, I'm</p>
-            <h1 class = "title">Jacob Anderson</h1>
-            <p class = "section__text__p2"> Game Developer</p>
-
-            <div class="btn-container">
-                <button 
-                    class="btn btn-color-2" 
-                    onclick = "window.open('./assets/resume.pdf')">
-                    Resume
-                </button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick = "location.href = './#contact'">
-                    Contact Info
-                </button>
-            </div>
-            
-            <div id = "socialsContainer">
-                <img 
-                    src = "./imgs/linkedin.svg" alt = "My Linkedin"
-                    class = "icon"
-                    onclick="location.href = 'https://www.linkedin.com/in/jacob-anderson-834886306/'"
-                />
-                <img 
-                    src = "./imgs/github.svg" alt = "My Github"
-                    class = "icon"
-                    onclick="location.href = 'https://github.com/zBoca'"
-                />
-            </div>
+        <div id="socials-container">
+          <img
+            src="./imgs/linkedin.svg"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jacob-anderson-834886306/'"
+          />
+          <img
+            src="./imgs/github.svg"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/zBoca'"
+          />
         </div>
+      </div>
     </section>
 
-    <section id = "about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img 
-                    src="./imgs/aboutPic.jpg" 
-                    alt="Profile Picture"
-                    class="about-pic"
-                />
-            </div>
-
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.svg"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-
-                        <h3>Experience</h3>
-                        <p>Indie Development / <br>Game Jams</p>
-                    </div>
-                    
-                    <div class="details-container">
-                        <img 
-                            src="./assets/education.svg"
-                            alt="Education icon"
-                            class="icon"
-                        />
-                        
-                        <h3>Education</h3>
-                        <p>Associate of<br>Computer Science</p>
-                    </div>
-                </div>
-
-                <div class="text-container">
-                    <p>I'm a game programmer with hopes to one day be a programmer for a AAA company. 
-                        I also have experience in level design and art, and have participated in a 
-                        few game jams with only help on the music and some puzzle designs.</p>
-                </div>
-            </div>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./imgs/aboutPic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.svg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3.5 years working with others<br>3 years of indie dev</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.svg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>AS in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Entry-level game programmer with outside experience in customer service, including handling immediate requests, resolving conflicts, and working within a team.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Game Development</h2>
-
-                    <div class="article-container">
-                        <article>
-                            <img 
-                                src="./assets/checkmark.svg"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>C++ / C#</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.svg"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Unity</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.svg"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Godot</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                                src="./assets/checkmark.svg"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Blender</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Game Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Godot</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Blender</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="projects">
-        <p class="section__text__p1">Browse My</p>
-        <h1 class="title">Projects</h1>
-
-        <div class="dimension-btns">
-            <button 
-                class="twod d-btn selected"
-                onclick="toggleProjects()">
-                2D
-            </button>
-            <button 
-                class="threed d-btn"
-                onclick="toggleProjects()">
-                3D
-            </button>
-        </div>
-        <div class="projects-container">
-            <div class="twod-container selected experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                            src="./imgs/LostSignalPics/LostSignalSS1.png"
-                            alt="Lost Signal"
-                            class="project-img"
-                            />
-                        </div>
-                    
-                        <h2 class="experience-sub-title project-title">Lost Signal</h2>
-                    
-                        <div class="btn-container">
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="location.href='https://github.com/zBoca/Lost-Signal'"
-                            >
-                                Github
-                            </button>
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="location.href='lostsignal.html'"
-                            >
-                                Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                            src="./imgs/ShapedByFailurePics/ShapedByFailureSS1.png"
-                            alt="Shaped By Failure"
-                            class="project-img"
-                            />
-                        </div>
-                    
-                        <h2 class="experience-sub-title project-title">Shaped By Failure</h2>
-                    
-                        <div class="btn-container">
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="location.href='https://github.com/zBoca/Shaped-By-Failure'"
-                            >
-                                Github
-                            </button>
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="location.href='shapedbyfailure.html'"
-                            >
-                                Details
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                            src="./imgs/ShiftingShadowsPics/ShiftingShadowsSS1.png"
-                            alt="Shifting Shadows"
-                            class="project-img"
-                            />
-                        </div>
-                    
-                        <h2 class="experience-sub-title project-title">Shifting Shadows</h2>
-                    
-                        <div class="btn-container">
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="location.href='https://github.com/zBoca/Shifting-Shadows'"
-                            >
-                                Github
-                            </button>
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="location.href='shiftingshadows.html'"
-                            >
-                                Details
-                            </button>
-                        </div>
-                    </div>
-                </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imgs/carGamePics/carGameSS4.png"
+                alt="Unfinished Racing Game"
+                class="project-img"
+              />
             </div>
-            <div class="threed-container experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                            src="./imgs/carGamePics/carGameSS4.png"
-                            alt="Unfinished Racing Game"
-                            class="project-img"
-                            />
-                        </div>
-                    
-                        <h2 class="experience-sub-title project-title">Unfinished Racing Game</h2>
-                    
-                        <div class="btn-container">
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="location.href='unfinishedracinggame.html'"
-                            >
-                                Details
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="experience-sub-title project-title">Unfinished Racing Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='unfinishedracinggame.html'"
+              >
+                More Info
+              </button>
             </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imgs/LostSignalPics/LostSignalSS1.png"
+                alt="Lost Signal"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Lost Signal</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='lostsignal.html'"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imgs/ShiftingShadowsPics/ShiftingShadowsSS1.png"
+                alt="Shifting Shadows"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Shifting Shadows</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='shiftingshadows.html'"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imgs/ShapedByFailurePics/ShapedByFailureSS1.png"
+                alt="Shaped By Failure"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Shaped By Failure</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='shapedbyfailure.html'"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img 
-                    src="./assets/email.svg"
-                    alt="Email icon"
-                    class="icon content-icon"
-                />
-                <p><a href="mailto:jacob99709@gmail.com">jacob99709@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img 
-                    src="./imgs/linkedin.svg"
-                    alt="LinkedIn icon"
-                    class="icon content-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/jacob-anderson-834886306/">LinkedIn</a></p>
-            </div>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.svg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jacob99709@gmail.com">jacob99709@gmail.com</a></p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./imgs/linkedin.svg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jacob-anderson-834886306/">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class = "navLinks">
-                    <li> <a href = "#about">About</a> </li>
-                    <li> <a href = "#experience">Experience</a> </li>
-                    <li> <a href = "#projects">Projects</a> </li>
-                    <li> <a href = "#contact">Contact</a> </li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </footer>
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -10,34 +10,35 @@
 </head>
 
 <body>
-    <nav id = "desktopNav">
-        <div class = "logo"><a href = "index.html">Jacob Anderson</a></div>
-        <div>
-            <ul class = "navLinks">
-                <li> <a href = "index.html#about">About</a> </li>
-                <li> <a href = "index.html#experience">Experience</a> </li>
-                <li> <a href = "index.html#projects">Projects</a> </li>
-                <li> <a href = "index.html#contact">Contact</a> </li>
-            </ul>
-        </div>
+    <nav id="desktop-nav">
+      <div class="logo">Jacob Anderson</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <nav id="hamburgerNav">
-        <div class = "logo"><a href = "index.html">Jacob Anderson</a></div>
-        <div class = "hamburgerMenu">
-            <div class = "hamburgerIcon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class = "menuLinks">
-                <li> <a href = "index.html#about" onclick="toggleMenu()">About</a> </li>
-                <li> <a href = "index.html#experience" onclick="toggleMenu()">Experience</a> </li>
-                <li> <a href = "index.html#projects" onclick="toggleMenu()">Projects</a> </li>
-                <li> <a href = "index.html#contact" onclick="toggleMenu()">Contact</a> </li>
-            </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Jacob Anderson</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
+
 
     <h1 class="title">Unfinished Racing Game</h1>
     <p class="game-descriptions"><br>This game is currently unfinished. This game is a rogue-like
@@ -46,9 +47,7 @@
         
         This game has functioning enemy car AI, as well as a health system for the vehicles, 
         however currently only has the one level and isn't fully refined
-        </p>
-    
-        <iframe src="https://www.youtube.com/embed/KJkJfPfw5qY?si=WVF94Wdh9EPfN-oR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </p>
 
     <div class="game-descriptions-images">
         <img 
@@ -69,6 +68,23 @@
         />
     </div>
 
+    <div class="trailer-holder">
+        <iframe class="player" src="https://www.youtube.com/embed/KJkJfPfw5qY?si=WVF94Wdh9EPfN-oR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html> 
